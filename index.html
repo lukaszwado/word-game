@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <link href="//fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+<body ng-app="avriosApp">
+<div ng-view></div>
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js({.tmp,app}) scripts/scripts.js -->
+<script src="app.js"></script>
+<script src="components/shared/state.service.js"></script>
+<script src="components/game/game.level.service.js"></script>
+<script src="components/game/game.state.service.js"></script>
+<script src="components/game/game.words.service.js"></script>
+<script src="components/game/game.data.service.js"></script>
+<script src="components/game/game.controller.js"></script>
+<script src="components/timer/timer.controller.js"></script>
+<script src="components/timer/timer.directive.js"></script>
+<script src="components/game-input/game-input.directive.js"></script>
+<script src="components/router/router.service.js"></script>
+<script src="components/router/router.js"></script>
+<!-- endbuild -->
+</body>
+</html>
